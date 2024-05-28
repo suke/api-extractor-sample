@@ -1,0 +1,24 @@
+{
+  "name": "package1",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build && api-extractor run --local"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.45.0",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "package2": "workspace:*",
+    "package3": "workspace:*"
+  }
+}
