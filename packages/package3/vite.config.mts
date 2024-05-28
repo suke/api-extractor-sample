@@ -8,7 +8,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'package3',
-      fileName: 'index.js',
+      fileName: 'index',
       formats: ['es']
     },
   },
